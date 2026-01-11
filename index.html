@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BellaCroce - Marque de mode corse. Vêtements élégants inspirés de la Méditerranée. Lin, coton, soie - l'art de vivre insulaire.">
+    <meta name="keywords" content="BellaCroce, mode corse, vêtements, méditerranée, fashion, élégance, lin, Corse">
+    <title>BellaCroce | Mode Corse - Élégance Méditerranéenne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">BellaCroce</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#about" class="nav-link">Notre Histoire</a></li>
+                <li><a href="#values" class="nav-link">Nos Valeurs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-btn search-btn" aria-label="Rechercher">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="nav-btn cart-btn" aria-label="Panier">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Collection Printemps-Été 2026</span>
+                <h1 class="hero-title">
+                    <span class="title-line">L'Élégance</span>
+                    <span class="title-line">Méditerranéenne</span>
+                </h1>
+                <p class="hero-description">
+                    Découvrez notre nouvelle collection inspirée des paysages corses.
+                    Des pièces uniques en lin, coton et soie qui célèbrent la beauté naturelle et l'artisanat local.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn btn-primary">Découvrir la Collection</a>
+                    <a href="#about" class="btn btn-secondary">Notre Histoire</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-logo-showcase">
+                    <img src="BellaCroce.png" alt="BellaCroce - Mode Corse" class="hero-logo-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Défiler</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Nos Créations</span>
+                <h2 class="section-title">Collections</h2>
+                <p class="section-subtitle">Explorez nos différentes lignes inspirées de la Corse</p>
+            </div>
+            <div class="collections-tabs">
+                <button class="tab-btn active" data-tab="all">Toutes</button>
+                <button class="tab-btn" data-tab="robes">Robes</button>
+                <button class="tab-btn" data-tab="tops">Tops</button>
+                <button class="tab-btn" data-tab="pantalons">Pantalons</button>
+                <button class="tab-btn" data-tab="accessoires">Accessoires</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <article class="product-card" data-category="robes">
+                    <div class="product-image">
+                        <div class="placeholder-content"><span class="placeholder-text">Robe 1</span></div>
+                        <div class="product-badges"><span class="badge new">Nouveau</span></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Robes</span>
+                        <h3 class="product-name">Robe Longue Ajaccio</h3>
+                        <p class="product-description">Lin naturel, coupe fluide</p>
+                        <div class="product-footer">
+                            <span class="product-price">169 EUR</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <div class="placeholder-content"><span class="placeholder-text">Top 1</span></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Tops</span>
+                        <h3 class="product-name">Blouse Romantique</h3>
+                        <p class="product-description">Coton bio, broderies</p>
+                        <div class="product-footer">
+                            <span class="product-price">89 EUR</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="pantalons">
+                    <div class="product-image">
+                        <div class="placeholder-content"><span class="placeholder-text">Pantalon</span></div>
+                        <div class="product-badges"><span class="badge bestseller">Best-seller</span></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pantalons</span>
+                        <h3 class="product-name">Pantalon Large Sartene</h3>
+                        <p class="product-description">Lin melange, taille haute</p>
+                        <div class="product-footer">
+                            <span class="product-price">119 EUR</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="robes">
+                    <div class="product-image">
+                        <div class="placeholder-content"><span class="placeholder-text">Robe 2</span></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Robes</span>
+                        <h3 class="product-name">Robe Midi Corte</h3>
+                        <p class="product-description">Viscose, imprime floral</p>
+                        <div class="product-footer">
+                            <span class="product-price">139 EUR</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <div class="placeholder-content"><span class="placeholder-text">Accessoire</span></div>
+                        <div class="product-badges"><span class="badge new">Nouveau</span></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessoires</span>
+                        <h3 class="product-name">Chapeau Paille Lumio</h3>
+                        <p class="product-description">Paille naturelle</p>
+                        <div class="product-footer">
+                            <span class="product-price">59 EUR</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="tops">
+                    <div class="product-image">
+                        <div class="placeholder-content"><span class="placeholder-text">Top 2</span></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Tops</span>
+                        <h3 class="product-name">Top Noue Scandola</h3>
+                        <p class="product-description">Lin, details noues</p>
+                        <div class="product-footer">
+                            <span class="product-price">69 EUR</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="collections-cta">
+                <a href="#" class="btn btn-outline-dark">Voir toute la collection</a>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Sélection</span>
+                <h2 class="section-title">Pièces Iconiques</h2>
+                <p class="section-subtitle">Nos créations les plus appréciées, confectionnées avec soin</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item featured-large">
+                    <div class="featured-image">
+                        <!-- A REMPLIR: Image produit vedette 1 -->
+                        <div class="placeholder-content">
+                            <span class="placeholder-text">Produit Vedette 1</span>
+                            <span class="placeholder-size">600 x 800px</span>
+                        </div>
+                    </div>
+                    <div class="featured-overlay">
+                        <span class="featured-category">Robes</span>
+                        <h3 class="featured-name">La Robe Calvi</h3>
+                        <span class="featured-price">149 EUR</span>
+                        <a href="#" class="btn btn-white">Decouvrir</a>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <!-- A REMPLIR: Image produit vedette 2 -->
+                        <div class="placeholder-content">
+                            <span class="placeholder-text">Produit Vedette 2</span>
+                            <span class="placeholder-size">400 x 500px</span>
+                        </div>
+                    </div>
+                    <div class="featured-overlay">
+                        <span class="featured-category">Tops</span>
+                        <h3 class="featured-name">Blouse Porto-Vecchio</h3>
+                        <span class="featured-price">79 EUR</span>
+                        <a href="#" class="btn btn-white">Decouvrir</a>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <!-- A REMPLIR: Image produit vedette 3 -->
+                        <div class="placeholder-content">
+                            <span class="placeholder-text">Produit Vedette 3</span>
+                            <span class="placeholder-size">400 x 500px</span>
+                        </div>
+                    </div>
+                    <div class="featured-overlay">
+                        <span class="featured-category">Accessoires</span>
+                        <h3 class="featured-name">Sac Bastia</h3>
+                        <span class="featured-price">129 EUR</span>
+                        <a href="#" class="btn btn-white">Decouvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-image main">
+                        <!-- A REMPLIR: Photo de la fondatrice -->
+                        <div class="placeholder-content">
+                            <span class="placeholder-text">Photo Fondatrice</span>
+                            <span class="placeholder-size">500 x 700px</span>
+                        </div>
+                    </div>
+                    <div class="about-image secondary">
+                        <!-- A REMPLIR: Photo atelier -->
+                        <div class="placeholder-content">
+                            <span class="placeholder-text">Atelier</span>
+                            <span class="placeholder-size">300 x 400px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Notre Histoire</span>
+                    <h2 class="section-title">Née de la Passion pour la Corse</h2>
+                    <div class="about-text">
+                        <p>
+                            BellaCroce est née d'un rêve : celui de créer une mode qui célèbre
+                            l'élégance naturelle de la femme méditerranéenne tout en rendant
+                            hommage à la beauté sauvage de l'Île de Beauté.
+                        </p>
+                        <p>
+                            Notre marque puise son inspiration dans les paysages corses :
+                            le maquis parfumé, les plages de sable fin, les villages perchés
+                            et les couchers de soleil sur la Méditerranée.
+                        </p>
+                        <p>
+                            Chaque pièce est conçue avec amour et attention. Nous privilégions
+                            les matières naturelles — lin, coton bio, soie — et un savoir-faire
+                            artisanal pour des créations intemporelles.
+                        </p>
+                    </div>
+                    <div class="about-signature">
+                        <div class="signature-line"></div>
+                        <span class="founder-name">Laurina Croce</span>
+                        <span class="founder-title">Fondatrice de BellaCroce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values" id="values">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Nos Engagements</span>
+                <h2 class="section-title">Nos Valeurs</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Qualité Artisanale</h3>
+                    <p class="value-description">Chaque vêtement est confectionné avec soin dans des ateliers
+                        sélectionnés pour leur expertise.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Matières Naturelles</h3>
+                    <p class="value-description">Lin, coton bio, soie... Nous privilégions les fibres naturelles pour un
+                        confort optimal.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Production Locale</h3>
+                    <p class="value-description">Concevoir en Corse, produire en Europe pour des circuits courts.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Mode Responsable</h3>
+                    <p class="value-description">Des collections intemporelles faites pour durer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Rejoignez la Famille BellaCroce</h2>
+                    <p class="newsletter-description">
+                        Inscrivez-vous pour recevoir nos nouvelles collections et offres exclusives.
+                    </p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre adresse email" required class="form-input">
+                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Restons en Contact</h2>
+                    <p class="contact-description">Une question ? N'hésitez pas à nous écrire.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:bellacroceofficiel@gmail.com">bellacroceofficiel@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Localisation</span>
+                                <span>Bastia, Corse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prenom</label>
+                                <input type="text" id="firstName" name="firstName" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom</label>
+                                <input type="text" id="lastName" name="lastName" required class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="footer-logo-text">BellaCroce</span>
+                    </a>
+                    <p class="footer-description">
+                        Mode féminine inspirée de la beauté sauvage de l'Île de Beauté.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Robes</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">Notre Histoire</a></li>
+                        <li><a href="#">Nos Valeurs</a></li>
+                        <li><a href="#">Guide des tailles</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Service Client</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 BellaCroce. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Confidentialité</a>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p class="credits-text">Designé pour <strong>Laurina Croce</strong> par <strong>Matteu Olivieri
+                        Bastiani</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
