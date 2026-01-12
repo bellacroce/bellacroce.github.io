@@ -2254,29 +2254,7 @@ button {
     }
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg: #1A1A1A;
-        --color-bg-alt: #242424;
-        --color-bg-warm: #1E1D1B;
-        --color-white: #2A2A2A;
-        --color-text: #E8E8E8;
-        --color-text-light: #B0B0B0;
-        --color-text-muted: #808080;
-        --color-heading: #FFFFFF;
-        --color-border: #3A3A3A;
-        --color-border-light: #2E2E2E;
-    }
-
-    .navbar.scrolled {
-        background: rgba(26, 26, 26, 0.95);
-    }
-
-    .placeholder-content {
-        background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg-warm) 100%);
-    }
-}
+/* Mode sombre désactivé pour cohérence sur tous les appareils */
 
 /* Print Styles */
 @media print {
